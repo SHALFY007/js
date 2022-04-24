@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Homework</title>
 </head>
+
 <body>
-<!--
+  <!--
 Обязательное задание.
 
 Необходимо скопировать и вставить в данный скрипт все функции из 4 задания.
@@ -29,10 +31,41 @@ Infinity делать не нужно, однако, в случае если б
 
 Необходимо для всех функций прописать комментарии jsdoc https://jsdoc.app/.
 -->
-<script>
-  "use strict";
+  <script>
+    "use strict";
 
+    console.log(mathOperation(5, 3, "+"));
+
+    function sum(a, b) { //принимает два значение и возвращает их сумму
+      return a + b;
+    }
+    function difference(a, b) { //принимает два значение и возвращает их разность
+      return a - b;
+    }
+    function multiplication(a, b) { //принимает два значение и возвращает их произведение
+      return a * b;
+    }
+    function division(a, b) { //принимает два значение и возвращает их деление
+      return a / b;
+    }
+    function mathOperation(arg1, arg2, operation) {
+      switch (operation) {
+        case '+':
+          return sum(arg1, arg2);
+          break;
+        case '-':
+          return difference(arg1, arg2);
+          break;
+        case '*':
+          return multiplication(arg1, arg2);
+          break;
+        case '/':
+          return division(arg1, arg2);
+          break;
+      }
+    }
   // Здесь пишем решение, данный комментарий необходимо стереть.
-</script>
+  </script>
 </body>
+
 </html>
